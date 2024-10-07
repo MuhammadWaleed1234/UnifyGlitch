@@ -1,0 +1,22 @@
+{
+  "name": "unifybackend",
+  "version": "1.0.0",
+  "description": "This is backend server for UNIfy app. Made by students of FAST NU Lahore.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "UNIfy",
+    "HTTP",
+    "Server",
+    "FAST",
+    "API",
+    "RESTfulApi"
+  ],
+  "author": "Muhammad Waleed , Armeen Fatima, Arooba Iqbal , Muiz ul Islam Khan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
