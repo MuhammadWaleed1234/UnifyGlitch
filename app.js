@@ -30,7 +30,7 @@ mongoose.connection.on('disconnected', () => {
   console.log('MongoDB connection disconnected');
 });
 
-// Middlewares
+// Middleware
 app.use(morgan('dev'));
 app.use(express.json()); // Replaces body-parser
 app.use(express.urlencoded({ extended: false })); // Handles URL-encoded data

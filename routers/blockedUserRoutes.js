@@ -1,6 +1,6 @@
 const express = require('express');
 const blockedUserController = require('../controllers/blockedUserController');
-const adminMiddleware = require('../middlewares/adminMiddleware');
+const adminMiddleware = require('../middleware/adminMiddleware');
 
 const router = express.Router();
 
@@ -11,6 +11,6 @@ router.post('/add', adminMiddleware.verifyAdmin, blockedUserController.addToBloc
 router.post('/remove', adminMiddleware.verifyAdmin, blockedUserController.removeFromBlocklist);
 
 // Get All Blocked Users (Admin Only)
-router.get('/', adminMiddleware.verifyAdmin, blockedUserController.getBlockedUsers);
+router.get('/', adminMiddleware.verifyAdmin, blockedUserController.getAllBlockedUsers);
 
 module.exports = router;
